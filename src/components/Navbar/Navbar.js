@@ -8,22 +8,31 @@ const Navbar = () => {
       <nav className='flex justify-between'>
         <div className='flex items-center'>
           <a href='netflix.com'>
-            <img src='http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c529.png' className='logo' alt='Netflix Logo' />
+            <img src='/images/logo.png' className='logo' alt='Netflix Logo' />
           </a>
-          <span className='link white'>
-            <a className='link white hover-gray' href='home.com'>Home</a>
-          </span>
-          <span>
-            <a className='link white hover-gray' href='home.com'>Movies</a>
-          </span>
-          <span>
-            <a className='link white hover-gray' href='home.com'>TV Shows</a>
-          </span>
-          <span>
-            <a className='link white hover-gray' href='home.com'>Recently Added</a>
-          </span>
+          <div className='browse'>
+            <div className='browse-btn'>
+              <i className='fas fa-sort-down'></i>
+              Browse
+            </div>
+            <div className='browse-list'>
+              <span className='link white'>
+                <a className='link white hover-gray' href='home.com'>Home</a>
+              </span>
+              <span>
+                <a className='link white hover-gray' href='home.com'>Movies</a>
+              </span>
+              <span>
+                <a className='link white hover-gray' href='home.com'>TV Shows</a>
+              </span>
+              <span>
+                <a className='link white hover-gray' href='home.com'>Recently Added</a>
+              </span>
+            </div>
+          </div>
         </div>
         <div className='flex items-center'>
+          <i className='fas fa-search white mr1'></i>
           <input type='text' spellCheck='false' className='bg-black h2 white ph2' placeholder='Titles, people, genres...' />
         </div>
       </nav>
