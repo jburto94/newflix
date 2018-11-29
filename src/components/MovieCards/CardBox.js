@@ -7,7 +7,7 @@ const CardBox = props => {
 		background = props.bgSrc;
 		bgY = '10%'
 	} else {
-		background = '/images/unavailable.jpg';
+		background = './images/unavailable.jpg';
 		bgY = '50%';
 	}
   return (

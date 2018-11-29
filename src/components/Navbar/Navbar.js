@@ -7,7 +7,7 @@ const Navbar = (props) => {
       <nav>
         <div className='flex items-center'>
           <a href='netflix.com'>
-            <img src='/images/logo.png' className='logo' alt='Netflix Logo' />
+            <img src='./images/logo.png' className='logo' alt='Netflix Logo' />
           </a>
           <div className='browse'>
             <div className='browse-btn'>
