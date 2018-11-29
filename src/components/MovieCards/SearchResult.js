@@ -36,7 +36,7 @@ class SearchResult extends Component {
 		if(searchResults.length > 0) {
 			console.log(searchResults);
 			return (
-				<div>
+				<div className='mb5'>
 					<h2 className='white'>Search results for: "{this.props.data}"</h2>
 					<div>
 						<h2 
