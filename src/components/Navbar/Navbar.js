@@ -1,8 +1,7 @@
 import React from 'react';
-import tachyons from 'tachyons';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div id='nav'>
       <nav>
@@ -32,8 +31,14 @@ const Navbar = () => {
           </div>
         </div>
         <div className='flex items-center search-bar mr5'>
-          <i className='fas fa-search white mr1'></i>
-          <input type='text' spellCheck='false' className='bg-black h2 white ph2' placeholder='Titles, people, genres...' />
+          <i className='fas fa-search white mr2'></i>
+          <input 
+            type='text' 
+            spellCheck='false' 
+            className='bg-black h2 white ph2' 
+            placeholder='Titles, people, genres...' 
+            onChange={props.onChange}
+          />
         </div>
       </nav>
     </div>

@@ -33,7 +33,7 @@ class MovieCard extends Component {
 				<div className='popular-moves'>
 					{this.state.cards.map((movie, i) => {
 						let bgSrc = `https://image.tmdb.org/t/p/w300/${movie.poster_path}`;
-						return <CardBox bgSrc={bgSrc} movie={movie} i={i} />
+						return <CardBox bgSrc={bgSrc} movie={movie} key={i} />
 					})}
 				</div>
 			</div>

@@ -1,11 +1,20 @@
 import React from 'react';
 
 const CardBox = props => {
+	let background = '';
+	let bgY = '';
+	if (props.bgSrc !== 'https://image.tmdb.org/t/p/w300/null' && props.bgSrc !== 'https://image.tmdb.org/t/p/w300/undefined') {
+		background = props.bgSrc;
+		bgY = '10%'
+	} else {
+		background = '/images/unavailable.jpg';
+		bgY = '50%';
+	}
   return (
     <div 
-			className='card-box' key={props.i}
+			className='card-box'
 			style={
-					{ background: `url(${props.bgSrc}) 50% 10%`}
+					{ background: `url(${background}) 50% ${bgY}`}
 			}
     >
 			<div 
