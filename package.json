@@ -1,7 +1,7 @@
 {
   "name": "netflix",
   "version": "0.1.0",
-  "homepage": "http://jburto94.github.io/newflix",
+  "homepage": "https://jburto94.github.io/newflix",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
