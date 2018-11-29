@@ -4,8 +4,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className='flex justify-between'>
+    <div id='nav'>
+      <nav>
         <div className='flex items-center'>
           <a href='netflix.com'>
             <img src='/images/logo.png' className='logo' alt='Netflix Logo' />
@@ -17,21 +17,21 @@ const Navbar = () => {
             </div>
             <div className='browse-list'>
               <span className='link white'>
-                <a className='link white hover-gray' href='home.com'>Home</a>
+                <a className='link white hover-gray' href='#nav'>Home</a>
               </span>
               <span>
-                <a className='link white hover-gray' href='home.com'>Movies</a>
+                <a className='link white hover-gray' href='#movies'>Movies</a>
               </span>
               <span>
-                <a className='link white hover-gray' href='home.com'>TV Shows</a>
+                <a className='link white hover-gray' href='#tv'>TV Shows</a>
               </span>
               <span>
-                <a className='link white hover-gray' href='home.com'>Recently Added</a>
+                <a className='link white hover-gray' href='#trending'>Trending</a>
               </span>
             </div>
           </div>
         </div>
-        <div className='flex items-center'>
+        <div className='flex items-center search-bar mr5'>
           <i className='fas fa-search white mr1'></i>
           <input type='text' spellCheck='false' className='bg-black h2 white ph2' placeholder='Titles, people, genres...' />
         </div>

@@ -1,6 +1,11 @@
 nav {
     height: 80px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: rgba(20,20,20,0.6);
 }
 
 .logo {
@@ -35,11 +40,11 @@ nav span {
         width: 240px;
         padding: 20px;
         text-align: center;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0,0,0,0.5);
     }
 
     .browse-list span:hover {
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0,0,0,0.2);
     }
 
     .browse-list {
@@ -64,10 +69,11 @@ nav span {
     }
 }
 
-nav input {
+.search-bar input {
     width: 250px;
 }
 
-nav input:focus {
+.search-bar input:focus {
     outline: none
 }
+

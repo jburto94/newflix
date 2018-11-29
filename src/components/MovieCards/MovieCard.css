@@ -18,7 +18,7 @@
 .card-content:hover {
 	width: 400px;
 	height: 240px;
-	transition: height 0.3s, width 0.3s;
+	transition: height 0.3s 0.2s, width 0.3s 0.2s;
 	background: rgba(0,0,0,0.7);
 }
 
@@ -37,4 +37,9 @@
 	align-items: center;
 	justify-content: flex-start;
 	flex-shrink: 0;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
