@@ -5,6 +5,7 @@ import CardDisplay from './components/MovieCards/CardDisplay';
 import SearchResult from './components/MovieCards/SearchResult';
 import Navbar from './components/Navbar/Navbar';
 import Search from './components/Navbar/Search';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
             <Search onChange={this.onChange} />
           </Navbar>
           <CardDisplay />
+          <Footer />
         </div>
       );
     } else {
@@ -38,6 +40,7 @@ class App extends Component {
             <Search onChange={this.onChange} />
           </Navbar>
           <SearchResult data={this.state.searchValue} />
+          <Footer />
         </div>
       );
     }

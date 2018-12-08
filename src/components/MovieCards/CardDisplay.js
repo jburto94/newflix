@@ -25,7 +25,7 @@ class CardDisplay extends Component {
 
   render() {
     return (
-      <div className='mb5'>
+      <div>
         <MovieCard category={this.state.popularMovies} title='Popular Movies' id='movies' />
         <MovieCard category={this.state.upcomingMovies} title='Upcoming Movies' />
         <MovieCard category={this.state.topMovies} title='Top Rated Movies' />
