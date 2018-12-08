@@ -1,0 +1,17 @@
+.search-bar input {
+  width: 250px;
+}
+
+.search-bar input:focus {
+  outline: none
+}
+
+@media only screen and (max-width: 800px) {
+  .search-bar input {
+    max-width: 180px;
+  }
+
+  .fa-search {
+    display: none;
+  }
+}

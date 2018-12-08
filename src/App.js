@@ -4,6 +4,7 @@ import 'tachyons';
 import CardDisplay from './components/MovieCards/CardDisplay';
 import SearchResult from './components/MovieCards/SearchResult';
 import Navbar from './components/Navbar/Navbar';
+import Search from './components/Navbar/Search';
 import './App.css';
 
 class App extends Component {
@@ -24,14 +25,18 @@ class App extends Component {
     if (this.state.searchValue === '') {
       return (
         <div className="App">
-          <Navbar onChange={this.onChange} />
+          <Navbar browseClick={this.browseClick} >
+            <Search onChange={this.onChange} />
+          </Navbar>
           <CardDisplay />
         </div>
       );
     } else {
       return (
         <div className='App'>
-          <Navbar onChange={this.onChange} />
+          <Navbar browseClick={this.browseClick} >
+            <Search onChange={this.onChange} />
+          </Navbar>
           <SearchResult data={this.state.searchValue} />
         </div>
       );

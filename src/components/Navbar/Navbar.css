@@ -33,18 +33,10 @@ nav span {
     display: inline-block;
 }
 
-/* creates a drop-down menu on smaller screens */
+/* creates a drop-down menu on smaller screens and adjusts sizes*/
 @media only screen and (max-width: 800px) {
-    .browse-list span {
-        display: block;
-        width: 240px;
-        padding: 20px;
-        text-align: center;
-        background-color: rgba(0,0,0,0.5);
-    }
-
-    .browse-list span:hover {
-        background-color: rgba(0,0,0,0.2);
+    .logo {
+        width: 75px;
     }
 
     .browse-list {
@@ -52,28 +44,16 @@ nav span {
         border: 1px solid rgba(255,255,255,.2);
         position: absolute;
         top: 80px;
-        left: 60px;
+        left: 0;
     }
 
     .browse-btn {
         display: inline-block;
         padding: 40px 0px;
+        cursor: pointer;
     }
 
-    .browse-btn:hover ~ .browse-list {
+    .active {
         display: inline-block;
     }
-
-    .browse-list:hover {
-        display: block;
-    }
 }
-
-.search-bar input {
-    width: 250px;
-}
-
-.search-bar input:focus {
-    outline: none
-}
-
