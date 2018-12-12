@@ -48,7 +48,8 @@ class SearchResult extends Component {
 	
 						<div className='popular-moves' id='search-results'>
 							{searchResults.map((movie, i) => {
-								let bgSrc = `https://image.tmdb.org/t/p/w300/${movie.poster_path}`;
+								let imagePath = movie.poster_path ? movie.poster_path : movie.profile_path;
+								let bgSrc = `https://image.tmdb.org/t/p/w300/${imagePath}`;
 								return <CardBox bgSrc={bgSrc} movie={movie} key={i} />
 							})}
 						</div>
