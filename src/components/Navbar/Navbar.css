@@ -6,6 +6,7 @@ nav {
     width: 100%;
     top: 0px;
     background: rgba(20,20,20,0.6);
+    z-index: 50;
 }
 
 .logo {
@@ -31,6 +32,7 @@ nav span {
 
 .browse-list {
     display: inline-block;
+    z-index: 50;
 }
 
 /* creates a drop-down menu on smaller screens and adjusts sizes*/

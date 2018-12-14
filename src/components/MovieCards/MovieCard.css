@@ -9,17 +9,21 @@
 	background-repeat: no-repeat;
 	transition: height 0.3s, width 0.3s;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .card-content * {
 	opacity: 0;
 }
 
-.card-content:hover {
-	width: 400px;
-	height: 240px;
-	transition: height 0.3s 0.2s, width 0.3s 0.2s;
-	background: rgba(0,0,0,0.7);
+
+@media screen and (min-width: 900px) {
+	.card-content:hover {
+		width: 400px;
+		height: 240px;
+		transition: height 0.3s 0.2s, width 0.3s 0.2s;
+		background: rgba(0,0,0,0.7);
+	}
 }
 
 @media only screen and (max-width: 800px) {
